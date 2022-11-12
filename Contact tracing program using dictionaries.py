@@ -82,11 +82,12 @@ while True:
     else:
         break
 ### Use dictionary to store info
+### Use full name as key
+### The value is another dictionary of personal information
 contact_tracing_dictionary = {
     full_name : {age, address, phone_number, vaccine_status, covid_status, previous_covid_status, comorbidity},
 }
 print(contact_tracing_dictionary)
-### Use full name as key
-### The value is another dictionary of personal information
 ## Option 2: Search, ask full name then display the record
+print(contact_tracing_dictionary.get(str(input("Enter full name of the record you're looking for: "))))
 ## Option 3: Ask the user if they want to exit or retry
